@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'BebasNeue-webfont';
+    src: url("../fonts/BebasNeue-webfont.ttf");
+}
+a{
+    /*下滑线去掉*/
+    text-decoration: none;
+    color: white;
+
+}
+body{
+    background: url("../images/pattern.gif");
+    font-family: BebasNeue-webfont;
+    margin-top: 50px;
+}
+
+#top{
+    position: fixed;
+    top: 0;
+    background: url("../images/pattern.gif");
+    width: 100%;
+    padding-bottom: 30px;
+}
+/*头部*/
+#header{
+    background-color: red;
+    height: 3px;
+}
+/*导航*/
+#nav{
+    text-align: center;
+}
+#nav ul{
+   display: inline-block;
+}
+
+#nav ul li{
+    display: inline-block;
+}
+
+#nav ul li a{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+
+    font-size: 35px;
+    /*垂直居中*/
+    line-height:50px;
+
+}
+
+#nav ul li .selected , #nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+#list{
+    margin-top: 100px;
+    text-align: center;
+    background-color: white;
+}
+#list .love{
+    display: inline-block;
+    width: 382px;
+    text-align: left;
+
+    margin: 20px;
+
+}
+#list .love a{
+    background-color: orangered;
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+
+    /*设置居中*/
+    line-height: 35px;
+    text-align: center;
+    /*圆角*/
+    border-radius: 5px;
+    font-size: 24px;
+}
+#list .love a:hover{
+    background-color: black;
+}
+#list .love p{
+    font-family: sans-serif;
+    margin: 7px 0;
+    /*首行缩进*/
+    text-indent: 30px;
+}
+
+#footer{
+    text-align: center;
+}
+
+#footer h2{
+    color: white;
+    font-size: 24px;
+    margin: 20px;
+
+    text-align: center;
+}
+
+#footer ul{
+    display: inline-block;
+}
+
+#footer ul li{
+    display: inline-block;
+}
+
+#footer ul li img{
+    margin: 0 3px 10px ;
+}
+
+#footer ul li img:hover{
+    /*设置透明度*/
+    opacity: 0.7;
+}
+
+/*自适应布局*/
+@media screen and (max-width: 1095px){
+
+    #nav ul li a{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 844px){
+
+    #nav ul li a{
+        width: 100px;
+        font-size: 25px;
+    }
+
+    #list{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    #nav ul li a{
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+    #list{
+        margin-top: 30px;
+    }
+
+    #list .love{
+        width: 360px;
+
+    }
+
+    #list .love img{
+        width: 355px;
+
+    }
+}
+
+
+

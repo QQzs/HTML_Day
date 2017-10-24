@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>认识jQuery</title>
+
+    <!--
+    JS存在的问题
+    1: 浏览器的兼容问题
+    2：存在复杂的dom操作
+    3：复杂的特效和动画的实现
+    4：请求网络数据存在跨域问题
+
+    jQuery优势：
+    1：几乎不存在浏览器兼容问题
+    2：轻松实现dom操作和特效、动画
+    3：多种方式的网络请求方案
+    -->
+</head>
+<body>
+    <div id="main">
+        <div class="word">
+            <p>我所阿萨德</p>
+        </div>
+
+        <div class="pic">
+            <img src="images/pic1.jpg">
+        </div>
+
+        <button>显示</button>
+        <button>隐藏</button>
+        <button>切换</button>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <!--<script>-->
+        <!--// 1. $() -&ndash;&gt;jQuery对象-->
+        <!--// 2. 拿到对应的标签-->
+
+        <!--// 3: 查看那发哦的标签的属性值-->
+        <!--console.log("class = " + $('#main .word').attr('class'))-->
+        <!--// 4.改变拿到的标签-->
+        <!--$('img').attr('src' , "images/pic2.jpg");-->
+
+        <!--// 5.如何查看标签中的内容-->
+        <!--console.log($('p').text());-->
+
+        <!--// 6.改变-->
+        <!--$('p').text('woshi ii');-->
+
+        <!--// 7.事件-->
+
+        <!--$('button').eq(0).on('click',function () {-->
+           <!--$('img').show();-->
+        <!--});-->
+
+        <!--$('button').eq(1).on('click',function () {-->
+            <!--$('img').hide();-->
+        <!--});-->
+
+        <!--$('button').eq(2).on('click',function () {-->
+            <!--$('img').toggle(2000);-->
+        <!--});-->
+
+        <!--// 遍历-->
+        <!--var data = [20,3,4,12,4,54];-->
+        <!--$.each(data,function (index , value) {-->
+            <!--console.log(index , value);-->
+        <!--});-->
+
+        <!--// 9.取出对应的下标-->
+        <!--$.inArray(2,data);-->
+
+        <!--// 10.写CSS-->
+        <!--$('.word').css({-->
+            <!--background: 'red' ,-->
+            <!--border:'1px solid green'-->
+        <!--});-->
+
+    <!--</script>-->
+
+</body>
+</html>

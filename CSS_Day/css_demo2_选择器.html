@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器</title>
+
+    <style>
+
+        div{
+            color:red;
+        }
+
+        p{
+            color: green;
+        }
+
+        /*class 选择器 可多个同时使用*/
+        .test{
+            color: blue;
+        }
+
+        /*id 选择器 唯一id*/
+        #first{
+            color: black;
+        }
+
+        /*并列选择器  逗号连接 满足两个条件之一*/
+        /*div 没有其他 class 或者 id*/
+        div,.test1{
+            color: blueviolet;
+        }
+
+        #first,.test2{
+            color: deeppink;
+        }
+
+        /*复合选择器 直接拼接*/
+        div.test3{
+            color: antiquewhite;
+        }
+        /*后代选择器 空格*/
+        div p{
+            color: deeppink;
+        }
+        /*直接后代选择器*/
+        div>p{
+            color: paleturquoise;
+        }
+
+        /*相邻兄弟选择器*/
+        div + p{
+            color: yellowgreen;
+        }
+
+        /*属性选择器*/
+        div[name][age]{
+            color: yellowgreen;
+        }
+
+        /*伪类*/
+        input:focus{
+            /*去除外部线条*/
+            outline: none;
+            /*改变宽高*/
+            width: 500px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        .test4:hover{
+            width: 300px;
+            height: 60px;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="test">我是div标签</div>
+    <p class="test">我是段落标签</p>
+    <div id="first">我是div标签</div>
+    <div>我是div标签</div>
+    <div id="two">我是div标签</div>
+    <div class="test1">我是div标签</div>
+    <div class="test1">我是div标签</div>
+    <div class="test2">我是div标签</div>
+    <div class="test3">我是div标签</div>
+    <div>
+        我是div标签
+        <div>我是段落标签</div>
+        <p>我是段落标签</p>
+        <div >
+            我是div标签
+            <div>我是段落标签</div>
+        </div>
+    </div>
+    <p>我是段落标签</p>
+    <br>
+    <input placeholder="我是输入框">
+    <div class="test4">我是div标签</div>
+
+</body>
+</html>

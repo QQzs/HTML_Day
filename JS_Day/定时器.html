@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        div{
+            color: red;
+            font-size: 150px;
+        }
+        img{
+            display: none;
+        }
+        p{
+            display: none;
+            color: red;
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <img id="image" src="image/flower.gif">
+    <p id="word">啊啊啊啊啊</p>
+    <div id="number">3</div>
+
+    <script>
+        var img = document.getElementById("image");
+        var number = document.getElementById("number");
+        var word = document.getElementById("word");
+
+        // 设置定时器
+        var timer = setInterval(function () {
+//            console.log("0")
+            // 改变倒计时数字
+            number.innerText -= 1;
+            if(number.innerText == 0){
+                // 清除定时器
+                clearInterval(timer);
+                img.style.display = "inline-block";
+                word.style.display = "block";
+                number.style.display = "none";
+            }
+        },1000);
+
+    </script>
+
+</body>
+</html>

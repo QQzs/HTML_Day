@@ -1,0 +1,144 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: black;
+}
+
+/*头部*/
+#header{
+    /*右对齐*/
+    text-align: right;
+    /*设置上下边距*/
+    margin: 15px 0;
+
+}
+
+#header a{
+    /*加粗*/
+    font-weight: bold;
+    /*字体*/
+    /*font-family: AngsanaUPC;*/
+    font-size: 13px;
+    /*右边距*/
+    margin-right: 8px;
+}
+
+#header a.no-weight{
+
+    font-weight: normal;
+    color: #555;
+}
+
+#header a.more-product{
+    color: white;
+    background-color: #3385ff;
+    /*去除下划线*/
+    text-decoration: none;
+    /*内边距*/
+    padding: 6px;
+}
+
+/*中部内容*/
+#content{
+
+}
+
+#content .top-content{
+    /*居中*/
+    text-align: center;
+}
+
+#content .top-content img{
+    width: 270px;
+    height: 129px;
+}
+
+#content .bottom-content{
+
+    width: 600px;
+    height: 38px;
+    margin: 0 auto;
+
+}
+
+#content .bottom-content input{
+
+    width: 500px;
+    height: 100%;
+
+    /*内边距*/
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 16px;
+
+    border: 1px solid #dddddd;
+}
+#content .bottom-content input:focus{
+    /*去除外边线*/
+    outline: none;
+    border-color: #3385ff;
+}
+
+#content .bottom-content a{
+
+    text-decoration: none;
+    background-color: #3385ff;
+
+    color: white;
+    width: 100px;
+    height: 38px;
+
+    /*浮动*/
+    float: right;
+    /*水平居中*/
+    text-align: center;
+    /*垂直居中*/
+    line-height: 38px;
+
+}
+
+#content .quick-search{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#content .quick-search img{
+
+    width: 120px;
+    height: 100px;
+
+    /*设置外边距*/
+    margin: 0 5px;
+
+}
+
+#content .quick-search img:hover{
+    /*设置不同明度*/
+    /*opacity: 0.5;*/
+
+    /*设置阴影*/
+    box-shadow: 0 0 8px #666;
+}
+
+/*底部*/
+#footer{
+    /*浏览器底部*/
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    padding: 30px 0;
+
+    /*内容居中*/
+    text-align: center;
+
+}
+
+#footer a{
+   margin: 0 5px;
+    color: darkgray;
+}

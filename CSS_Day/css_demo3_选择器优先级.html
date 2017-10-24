@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器优先级</title>
+    <style>
+
+        /*
+        css样式遵循的规律：
+        1：相同类型的选择器：a:就近原则  b:叠加原则
+        2：不同类型的选择器：
+        important 》 内联 》 id选择器 》 类选择器 》 标签选择器
+        3:选择器权重越高（累加），优先级越高
+        4:important属性最高1000
+        5：行内选择器仅此于important
+
+        */
+
+        /*id选择器*/
+        #main{
+            color: deeppink;
+        }
+
+        /*类选择器*/
+        .test1{
+            color: black;
+        }
+        .test2{
+            color: green;
+        }
+
+        <!--标签选择器-->
+        div{
+            color: red;
+        }
+
+        /*
+        通配符：
+        1：优先级非常低
+        2：性能比较差
+        */
+        *{
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="test1 test2">我是div标签</div>
+
+</body>
+</html>

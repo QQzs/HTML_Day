@@ -1,0 +1,70 @@
+
+body{
+    padding-top: 50px;
+}
+
+#carousel-example-generic .carousel-indicators{
+    bottom: 2px;
+}
+
+
+#main{
+    padding: 30px;
+}
+
+#main .container-fluid{
+    text-align: center;
+}
+
+#main .container-fluid .col-md-4{
+    margin-bottom: 20px;
+}
+
+#main .container-fluid .col-md-4 img{
+    width: 140px;
+}
+
+#main .container-fluid .col-md-4 p{
+    height: 60px;
+    text-indent: 28px;
+}
+
+#main .tab-content .tab-pane h3{
+    color: blue;
+}
+
+#main .tab-content span{
+    color: gray;
+    font-size: 20px;
+}
+
+#main .tab-content p{
+
+    text-indent: 28px;
+    font-size: 16px;
+
+}
+
+#main .container-bottom .tab-content .col-md-7{
+    text-align: left;
+    margin-top: 80px;
+}
+
+#footer{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 977px){
+    #main .container-bottom .tab-content .col-md-7{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    #carousel-example-generic .carousel-indicators{
+        bottom: 2px;
+    }
+}

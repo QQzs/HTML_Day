@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document常用操作</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <button class="btn btn-success" onclick="changeImg();">更换图片</button>
+    <button id="btn2" class="btn btn-warning">隐藏</button>
+    <p></p>
+    <img id="image" class="icon" src="image/img_01.jpg">
+
+    <script>
+        var img = document.getElementById("image");
+        var position = 1;
+        function changeImg() {
+//            alert(0);
+            // 获取网页中的标签
+//            var img = document.getElementsByClassName("icon")[0];
+//            console.log(img);
+            // 改变src属性
+            if(position < 5){
+                position++;
+            }else{
+                position = 1;
+            }
+            img.src = "image/img_0" + position + ".jpg";
+
+        }
+
+        var show = true;
+        var btn = document.getElementById("btn2");
+        btn.onclick = function () {
+            if(show){
+                show = false;
+                img.style.display = "none"
+                btn.innerText = "显示";
+            }else{
+                show = true
+                img.style.display = "block"
+                btn.innerText = "隐藏";
+            }
+        };
+
+    </script>
+
+</body>
+</html>

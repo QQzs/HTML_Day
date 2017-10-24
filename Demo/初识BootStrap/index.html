@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BootStrap</title>
+    <!--引入外部的框架-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            padding: 60px;
+        }
+
+        .test1{
+            width: 200px;
+            margin-top: 50px;
+        }
+
+        .test2{
+            font-size: 50px;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <button class="btn btn-warning">百度一下</button>
+    <button class="btn btn-danger">谷歌一下</button>
+    <button class="btn btn-success">搜狗一下</button>
+    <br>
+    <button class="btn btn-success test1">搜狗一下</button>
+
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            <span class="sr-only">60% Complete</span>
+        </div>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+            <span class="sr-only">45% Complete</span>
+        </div>
+    </div>
+
+    <a href="#">Inbox <span class="badge">42</span></a>
+
+    <button class="btn btn-primary" type="button">
+        Messages <span class="badge">4</span>
+    </button>
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <i class="glyphicon glyphicon-cloud test2"></i>
+    <i class="glyphicon glyphicon-user test2"></i>
+    <i class="glyphicon glyphicon-home test2"></i>
+    <i class="glyphicon glyphicon-headphones test2"></i>
+
+</body>
+</html>

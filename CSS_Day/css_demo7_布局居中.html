@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS布局</title>
+    <style>
+
+        /*
+
+        所有的标签水平居中：
+        行内标签和行内-块级变迁：在父类标签中设置 text-align: center;
+        块级块级：在自身设置：margin:0 auto;
+
+        所有的标签垂直居中：
+        行内标签和行内-块级标签：在父类中设置：line-height
+        块级标签：position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+        */
+
+
+
+        #main{
+            width: 500px;
+            height: 200px;
+            background-color: red;
+
+            /*让内容居中*/
+            text-align: center;
+
+            /*垂直居中*/
+            line-height: 200px;
+
+            position: relative;
+        }
+
+        span{
+
+            background-color: blue;
+        }
+
+        .test{
+            width: 120px;
+            height: 40px;
+            background-color: palevioletred;
+
+            /*块级标签居中*/
+            margin:0 auto;
+
+            /*垂直居中*/
+            line-height: 40px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+
+        input{
+            width: 500px;
+            height: 80px;
+            padding: 10px;
+            /*内边距*/
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <!--行内标签-->
+        <!--<span>行内标签</span>-->
+        <!--行内块级标签-->
+        <!--<button>button</button>-->
+
+        <!--块级标签-->
+        <div class="test">dddddddddd</div>
+
+    </div>
+
+    <br>
+    <input>
+</body>
+</html>

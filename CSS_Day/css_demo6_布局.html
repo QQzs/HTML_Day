@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS布局</title>
+
+    <!--任何一种类型的标签一旦脱离标准，就会被强制转成行内-块级标签-->
+    <style>
+
+        #main{
+            width: 400px;
+            height:200px;
+            background-color: red;
+        }
+
+        .test1{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+
+            /*浮动*/
+            float: left;
+        }
+        .test2{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            float: right;
+        }
+
+        #main2{
+            width: 400px;
+            height:200px;
+            background-color: red;
+            margin-top: 50px;
+
+            /*position 属性 父类relative 子类absolute*/
+            position: relative;
+        }
+
+        .test3{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+
+            position: absolute;
+
+            /*定位*/
+            right: 20px;
+            bottom:20px;
+        }
+
+        .test4{
+            background-color: palevioletred;
+            /*停留在浏览器的底部*/
+            position: fixed;
+            bottom: 0;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div class="test1">1</div>
+        <div class="test2">2</div>
+    </div>
+
+
+    <div id="main2">
+        <div class="test3">3</div>
+    </div>
+
+    <div class="test4">相对浏览器定位</div>
+
+</body>
+</html>

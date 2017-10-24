@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    height: 100% ;
+    width: 100%;
+}
+
+#main{
+    /*定位*/
+    /*position: relative;*/
+
+
+    /*多栏布局*/
+
+    -webkit-column-width: 202px;
+    -moz-column-width: 202px;
+    column-width: 202px;
+
+
+
+}
+
+.box{
+    padding: 15px 0 0 15px;
+    float: left;
+}
+
+.pic{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.pic img{
+    width: 165px;
+}

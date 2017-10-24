@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS常用事件</title>
+</head>
+<body>
+
+    <img src="JS_常见事件/image/img_01.jpg">
+    <p></p>
+    <input>
+    <script>
+        // 页面加载完毕
+        window.onload = function () {
+//          alert("页面加载完毕!")
+
+            var img = document.getElementsByTagName("img")[0];
+            var input = document.getElementsByTagName("input")[0];
+            // 鼠标进入
+            img.onmouseover = function () {
+               console.log("鼠标进入");
+            }
+
+            // 鼠标移动
+            img.onmousemove = function () {
+                console.log("鼠标移动");
+            }
+
+            input.onfocus = function () {
+                input.style.width = "500px";
+                input.style.height = "60px";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
